@@ -35,22 +35,29 @@ public class Arithmetic{
                     double costTotal$=(totalSockCost$+totalGlassCost$+totalEnvelope$+taxPercent*(totalSockCost$+totalGlassCost$+totalEnvelope$)) ;
                     
                     
-                    
+                            //using printf instead of ln to format the amount of decimals
+                            //re formats it based on the num,ber after the first percent
+                            //formated to look nice :!
             
                                  
-                            System.out.println("Sock cost"+ totalSockCost$);
-                            System.out.println("Sock Tax");
+                            System.out.println("Sock cost:");
+                            System.out.println(totalSockCost$);
+                            System.out.println("Sock Tax:");
                             System.out.printf( "%.2f %n", sockTax$);
-                            System.out.println("Glass Cost"+ totalGlassCost$);
-                            System.out.println("Glass Tax");
+                            System.out.println("Glass Cost:");
+                            System.out.println(totalGlassCost$);
+                            System.out.println("Glass Tax:");
                             System.out.printf( "%.2f %n", glassTax$);
-                            System.out.println("Envelopes"+ totalEnvelope$);
-                            System.out.println("Enevelope Tax");
+                            System.out.println("Envelopes:");
+                            System.out.println(totalEnvelope$);
+                            System.out.println("Enevelope Tax:");
                             System.out.printf( "%.2f %n", envelopeTax$);
-                            System.out.println("Cost No tax"+ (totalSockCost$+totalGlassCost$+totalEnvelope$));
+                            System.out.println("Cost No tax:");
+                            System.out.println((totalSockCost$+totalGlassCost$+totalEnvelope$));
                             System.out.println("Cost Total") ;
                             System.out.printf( "%.2f %n", costTotal$);
                 
+                            
                 
       }
  }
