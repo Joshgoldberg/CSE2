@@ -32,7 +32,7 @@ import java.util.Scanner;
                     
                     
                 
-                    
+                    //added extra results for accuracy
                    
                    
                     
@@ -41,8 +41,9 @@ import java.util.Scanner;
                     System.out.println(guess1);
                     System.out.println("Late Guess");
                     System.out.println(guess10);
-                    // unsure for now how to get better guess, not programing issue 
-                    //but more of a need to figure out what the calculation is
+                  // printing it out, figured out math issue, was changing the 2 in front 
+                  // of guess
+                  //added extra guesses cause why not be more accurate
                     
                     
                     
