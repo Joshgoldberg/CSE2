@@ -1,4 +1,5 @@
 //Course Description Scanner
+//JOshua goldberg
 //this one takes the number and determines what year and semster a course was offered
 
 import java.util.Scanner;
