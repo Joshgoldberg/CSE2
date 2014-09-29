@@ -28,10 +28,7 @@ import java.util.Scanner;
    			   rtrue1=true;
    			   if(rt3>=1)
    			   rtrue2=true;
-   			   
-   			  
-   			  
-  	 
+
    			  System.out.println("Does "+rtrue+ andor[randor]+ rtrue1+ andor[randor1]+rtrue2+ 
    			   " have the value true(t/T) or false(f/F)?");
    			  //printing out what the problem is
@@ -50,8 +47,6 @@ import java.util.Scanner;
                        			    {System.out.println("Incorrect");}
                			           //answered
                			            }
-               			        
-               			        
                			        else //this is for when its first logical and and than logical or
                			            {
                			            boolean Answer2 = (rtrue && rtrue1 || rtrue2);
@@ -60,6 +55,7 @@ import java.util.Scanner;
                    			        else 
                    			        {System.out.println("Incorrect");}
            			                }//
+           			                
            			    }
            			   else//this is for if its first logical or
            			        {    
@@ -70,10 +66,7 @@ import java.util.Scanner;
                        			    {System.out.println("Correct"); }
                        			    else 
                        			    {System.out.println("Incorrect");}
-               			           
                			            }
-               			        
-               			        
                			         else //only logical or
                			            {
                			            boolean Answer4= (rtrue || rtrue1 || rtrue2);
@@ -81,13 +74,10 @@ import java.util.Scanner;
                    			        {System.out.println("Correct"); }//if its true
                    			        else 
                    			        {System.out.println("Incorrect");}
-           			       
-           			            
            			                 }
-           			        
            			        }
-           			    
            			            break;
+           			            
            			 case "f":case"F":       //same as above but now checking for false
            			     if(randor==0)
            			    {
@@ -98,10 +88,7 @@ import java.util.Scanner;
                        			   {System.out.println("Correct"); }
                        			   else 
                        			   {System.out.println("Incorrect");}
-               			           
                			            }
-               			        
-               			        
                			        else //checking
                			            {
                			            boolean Answer6= (rtrue && rtrue1 || rtrue2);
@@ -120,10 +107,7 @@ import java.util.Scanner;
                        			    {System.out.println("Correct"); }
                        			    else 
                        			    {System.out.println("Incorrect");}
-               			           
                			            }
-               			        
-               			        
                			        else //final operator state for false 
                			            {
                			            boolean Answer8= (rtrue || rtrue1 || rtrue2);
@@ -131,22 +115,13 @@ import java.util.Scanner;
                    			        {System.out.println("Correct"); }
                    			        else 
                    			        {System.out.println("Incorrect");}
-           			       
-           			            
            			            }
-           			        
-           			            
            			        }
-       			         
        			            break;//ending correct 
            		   default:
            			   System.out.println("Please Enter T, t or F, f");//checking if variables are right
            		            break;
-   			   
    			   //all code completly for all different cases
    			  }
-   			   
-   		
     	 }
     }
-
