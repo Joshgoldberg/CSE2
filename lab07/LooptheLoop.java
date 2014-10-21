@@ -12,27 +12,26 @@ import java.util.Scanner;
    	         Scanner myScanner;
    			 myScanner =new Scanner( System.in );
    		    System.out.println("Enter an int between 1 and 15");
-   		        int nStars=1;
-       	        int nRows=myScanner.nextInt();
-       	        int c1=1;
-   		    if(0<nRows && nRows<=15){
-       	     
-       	       while (nStars<=nRows){
-               	        System.out.print("*");
-               	        nStars++;}
-               	     
+   		    
+   		    int num=scan.nextInt();
+   		    
+   		    if (num>=0 && num <=15){
+   		      int d=0;
+   		      
+   		     
+   		      //have to declare outside
+	        while(d<num && d<15){//while instead of for
+	         int k=0;//another declear
+	         while(k<d+1){//while
+	    	System.out.print('*');
+		k++;//declared at bottom
+	    }
+	    System.out.println();
+	    d++;//declared outside
+	}//
+	}//
        	        
-       	      
-       	        }
-       	       
-       	        
-       	        
-       	    
-       	        
-       	    
-       	    
-       	    
-       	    
+     
        	    else{
        	        System.out.print("Enter and Integer between [1,15]");
        	    }  
