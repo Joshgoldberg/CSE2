@@ -6,17 +6,17 @@ public class HW8{
   
   public static void main(String []arg){//the main code
 	char input;// for the input of characters original
-	String other;//since i use a string anther time, i addedthis since some needed to be strings
-	Scanner scan=new Scanner(System.in);// new scanner
-	System.out.print("Enter 'C' or 'c' to continue, anything else to quit- ");//first question
-	other=getInput(scan,"Cc");//using outer method
-	System.out.println("You entered '"+other+"'");// what you inputed
-  System.out.print("Enter 'y', 'Y', 'n', or 'N'- ");//next one
-  input=getInput(scan,'y',5); //switched up what the scan is
-  System.out.println("You entered '"+input+"'");//what i inputed
-  System.out.print("Enter one of: '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'");//last question
-	other=getInput(scan,"12345",2,1);//last method
-  System.out.println("You entered '"+other+"'");//last input
+    	String other;//since i use a string anther time, i addedthis since some needed to be strings
+    	Scanner scan=new Scanner(System.in);// new scanner
+    	System.out.print("Enter 'C' or 'c' to continue, anything else to quit- ");//first question
+    	other=getInput(scan,"Cc");//using outer method
+    	System.out.println("You entered '"+other+"'");// what you inputed
+        System.out.print("Enter 'y', 'Y', 'n', or 'N'- ");//next one
+        input=getInput(scan,'y',5); //switched up what the scan is
+        System.out.println("You entered '"+input+"'");//what i inputed
+        System.out.print("Enter one of: '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'");//last question
+    	other=getInput(scan,"12345",2,1);//last method
+        System.out.println("You entered '"+other+"'");//last input
   }
   
   
