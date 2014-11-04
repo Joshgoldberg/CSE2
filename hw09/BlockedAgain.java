@@ -10,54 +10,54 @@ public class BlockedAgain{
             allBlocks(m);
                             }
 
-    
-   public static int getInt(){
-       int m;
-       int j;
+    //this is all the same as the program that was given
+   public static int getInt(){//this is for get in
+       int m;// the first int for check int
+       int j;// for check range
        System.out.println("Enter an in int between 1 and 9, inclusive:");
-       Scanner scan=new Scanner(System.in);
+       Scanner scan=new Scanner(System.in);// scanner
         
-       m=checkInt(scan);
+       m=checkInt(scan);// goes into method
        
-      j=checkRange(m);
+      j=checkRange(m);//goes into methods after first comples
         
        //j=checkInt(j);
        // checkRange();
-        return j;
+        return j;//returns the value to main method
     }
     
-    public static int checkInt(Scanner scan){
-        int r=0;
-        int p=0;
+    public static int checkInt(Scanner scan){// this checks if int
+        int r=0;//repater
+        int p=0;//int we are gonna use
         while (r==0){
         scan=new Scanner(System.in);
-            if(scan.hasNextInt()){
-            p=scan.nextInt();
-            r++;
-            return p;
+            if(scan.hasNextInt()){//if its integer
+            p=scan.nextInt();//make it integer
+            r++;//quit out of while
+            return p;//return this vairable
     }
-     else{ System.out.println("PLease enter an Integer");
+     else{ System.out.println("PLease enter an Integer");//keep trying
         }
     }
-    return p;
+    return p;//needed but not read
     }
     
     
-    public static int checkRange(int j ){
+    public static int checkRange(int j ){//checks the range
         int r=0;
-        Scanner scan=new Scanner(System.in);
-        while (r==0){
+        Scanner scan=new Scanner(System.in);//for re scaning below
+        while (r==0){//repater
             if(j>=1 && j<10){
-                r=1;
-                return j;
+                r=1;//quit out
+                return j;//return if in range
                 
             }
             else{
                 System.out.println("Please Enter Integer within range");
-                j=checkInt(scan);
+                j=checkInt(scan);//send back to other method
             }    
     }
-    return j;
+    return j;//return j
     }
     
 
@@ -66,7 +66,9 @@ public class BlockedAgain{
        "   66666666666   ","  7777777777777  "," 888888888888888 ","99999999999999999",};
        String[] line={"        -        ","       ---       ","      -----      ","     -------     ",
        "    ---------    ","   -----------   ","  -------------  "," --------------- ","-----------------",};
-        
+        //
+        //I DID THIS PROGRAM THIS WAY LAST TIME SO I AM DOING IT AGAIN this way
+    
    			int qw;//first set of variables
    		    int as;
    		    int df;
@@ -100,7 +102,7 @@ public class BlockedAgain{
            		 }
         
         
-      return i;  
+      return i;  // return needed
     }
    
 }
