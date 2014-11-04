@@ -9,9 +9,9 @@ public class Methods{
 	int a,b,c;
 	System.out.println("Enter three ints");
 
-	a= scan.nextInt();
-	b= scan.nextInt();
-	c= scan.nextInt();
+	a= checkInt(scan);
+	b= checkInt(scan);
+	c= checkInt(scan);
 
 
   
@@ -37,6 +37,22 @@ public class Methods{
       if(q<v&&v<e){return true;}
       else {return false;}
       }
+   public static int checkInt(Scanner scan){
+        int r=0;
+        int p=0;
+        while (r==0){
+        scan=new Scanner(System.in);
+            if(scan.hasNextInt()){
+            p=scan.nextInt();
+            r++;
+            return p;
+    }
+     else{ System.out.println("PLease enter an Integer");
+        }
+    }
+    return p;
+    }
+        
       
   }
 
