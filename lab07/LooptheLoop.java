@@ -10,17 +10,16 @@ import java.util.Scanner;
     	
    	    public static void main(String[] args) {
    	         Scanner myScanner;
-   			 myScanner =new Scanner( System.in );
+   			 Scanner scan=new Scanner(System.in);
    		    System.out.println("Enter an int between 1 and 15");
    		    
    		    int num=scan.nextInt();
    		    
-   		    if (num>=0 && num <=15){
-   		      int d=0;
-   		      
-   		     
-   		      //have to declare outside
-	        while(d<num && d<15){//while instead of for
+   		    if (num>=0 && num <=15){//outter loop
+   		      int d=0;//for inner loop
+   		      int j=0;//so it prints every "number"
+   		      while(j<=num){
+	        while(d<j){//while instead of for
 	         int k=0;//another declear
 	         while(k<d+1){//while
 	    	System.out.print('*');
@@ -29,6 +28,7 @@ import java.util.Scanner;
 	    System.out.println();
 	    d++;//declared outside
 	}//
+	j++;}
 	}//
        	        
      
