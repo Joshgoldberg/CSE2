@@ -12,7 +12,8 @@ public class Enigma0{
     Scanner scan=new Scanner(System.in);
     int n;
     if(scan.hasNextInt()){
-      n=scan.nextInt();
+     int k=4,p=6,q=7,r=8;
+     n=scan.nextInt();
       System.out.println("You entered "+n);
       switch(k+p+q+r){
       case 24: 
@@ -25,14 +26,14 @@ public class Enigma0{
       n=4;
       System.out.println("You entered "+n);
       
-      int k=4,p=6,q=7,r=8;
+    
    
     }
     
     
     }
   }
-}
+
 
 /* Error report:
  *   Expand this comment:
