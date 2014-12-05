@@ -1,16 +1,16 @@
-import java.util.Scanner;
-public class PokerHands{
+import java.util.Scanner;//scna
+public class PokerHands{//start
     public static void main(String[ ] args) {
-    
+    //main
        System.out.println("Enter 'y' or 'Y' to enter a(nother) hand");
-       Scanner lol=new Scanner(System.in);//scan
+       Scanner lol=new Scanner(System.in);//scan//
         String game = lol.nextLine();
         switch (game){//if yes
-            case"Y":case"y":
-                enterhand();
+            case"Y":case"y"://f yes than it goes next
+                enterhand();//method
              break;
             default:
-            System.exit(0);
+            System.exit(0);//exit otherwise
             break;
         }
        
@@ -24,42 +24,42 @@ public class PokerHands{
     
 
 
-public static void showOneHand(int hand[]){
+public static void showOneHand(int hand[]){//start
 	String suit[]={"Clubs:	", "Diamonds: ", "Hearts:   ",              "Spades:   "};
-	String face[]={
+	String face[]={//for desplaying card
        "A ","2 ","3 ","4 ","5 ","6 ","7 ","8 ","9 ","10 ",
   	"J ","Q ","K "};
 	String out="";
-	for(int s=0;s<4;s++){
+	for(int s=0;s<4;s++){//
   	out+=suit[s];
-  	for(int rank=0;rank<13;rank++)
+  	for(int rank=0;rank<13;rank++)//
     	for(int card=0;card<5;card++)
-     	if(hand[card]/13==s && hand[card]%13==rank)
-      	out+=face[rank];
+     	if(hand[card]/13==s && hand[card]%13==rank)//to have it print riht
+      	out+=face[rank];//adds to what its printing
   	out+='\n';
 	}
-	System.out.println(out);
+	System.out.println(out);//than it prints the hand
 	
   }
   
   public static void handis(int hand[]){
-	int suit[]={0,0,0,0,0};
+	int suit[]={0,0,0,0,0};//just easier to declare this way
 	int card[]={0,0,0,0,0};
 
-    	for(int q=0;q<5;q++){
+    	for(int q=0;q<5;q++){//setting up suit
     	  suit[q]= hand[q]/13;}
-    	for(int q=0;q<5;q++){
-    	    if (hand[q]>=13){
+    	for(int q=0;q<5;q++){//setting up cards
+    	    if (hand[q]>=13){//different cause its easier less than 13
         card[q]= hand[q]%13;}
             else{
         card[q]= hand[q] ;      
             }
         }
-     int they= exactlyOneDup(card x[]);
+     int they= exactlyOneDup(card x[]);//setting up card
      
     if(suit[0]==suit[1]==suit[2]==suit[3]==suit[4]){
         if(card[0]+card[1]+card[2]+card[3]+card[4]==63){
-            System.out.println("This is a Royal Flush!")
+            System.out.println("This is a Royal Flush!")//how it prints
         }
         if((card[0]+card[1]+card[2]+card[3]+card[4])%5==0){
             System.out.println("This is a Straight Flush!")
@@ -78,19 +78,19 @@ public static void showOneHand(int hand[]){
 	
 
  
-public static int[] enterhand(){
+public static int[] enterhand(){//enter hand
     int hand[]={0,0,0,0,0};
     int k=0;
     while(k<5){
         
     System.out.println("Enter the suit:'c', 'd', 'h', or 's'");
-  	Scanner hey=new Scanner(System.in);//scan
+  	Scanner hey=new Scanner(System.in);//scan/
   	int card=0;
         String no = hey.nextLine();
         switch (no){//if yes
             case"c":
-                card+=0;
-               card+= cardadd();
+                card+=0;//system as everytime it goes to 13 it resets 
+               card+= cardadd();//for next suit
                 hand[k]=card;
                 if(k==0){k++;}
                 else{
@@ -151,7 +151,7 @@ public static int[] enterhand(){
                 handis(hand);
                 return hand;
 }
- public static int cardadd(){
+ public static int cardadd(){//adds the card after it has the suit,
      System.out.print("Enter one of 'a', 'k', 'q', 'j', '10', ...'2'-");
      Scanner oh=new Scanner(System.in);//scan
      int a=0;
@@ -208,7 +208,7 @@ public static int[] enterhand(){
      }return g;
  
  }
- public static int exactlyOneDup(int x[]){
+ public static int exactlyOneDup(int x[]){//than this is for checking for 2 pair
        int add=0;
        for (int y=0; y<x.length; y++){
         for (int k=y+1; k<x.length; k++){
